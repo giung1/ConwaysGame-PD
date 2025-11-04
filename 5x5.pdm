@@ -1,0 +1,1580 @@
+Coupled
+    {
+    Type = Root
+    Name = gameoflife_5x5_moore_named
+    Ports = 0; 0
+    Description = 
+    Graphic
+        {
+        Position = 0; 0
+        Dimension = 600; 600
+        Direction = Right
+        Color = 15
+        Icon = 
+        Window = 5000; 5000; 5000; 5000
+        }
+    Parameters
+        {
+        }
+    System
+        {
+        Atomic
+            {
+            Name = Cell1
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 0 ; 0
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell1 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell2
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 1500 ; 0
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell2 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell3
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 3000 ; 0
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell3 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell4
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 4500 ; 0
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell4 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell5
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 6000 ; 0
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell5 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell6
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 0 ; -1500
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell6 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell7
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 1500 ; -1500
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell7 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell8
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 3000 ; -1500
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell8 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell9
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 4500 ; -1500
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell9 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell10
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 6000 ; -1500
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell10 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell11
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 0 ; -3000
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell11 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell12
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 1500 ; -3000
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell12 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell13
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 3000 ; -3000
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell13 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell14
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 4500 ; -3000
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell14 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell15
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 6000 ; -3000
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell15 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell16
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 0 ; -4500
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell16 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell17
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 1500 ; -4500
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell17 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell18
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 3000 ; -4500
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell18 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell19
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 4500 ; -4500
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell19 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell20
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 6000 ; -4500
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell20 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell21
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 0 ; -6000
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell21 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell22
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 1500 ; -6000
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell22 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell23
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 3000 ; -6000
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell23 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell24
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 4500 ; -6000
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell24 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Atomic
+            {
+            Name = Cell25
+            Ports = 1 ; 1
+            Path = discrete/cellgameoflife.h
+            Description = Atomic DEVS model
+            Graphic
+                {
+                Position = 6000 ; -6000
+                Dimension = 300 ; 300
+                Direction = Right
+                Color = 15
+                Icon = None
+                }
+            Parameters
+                {
+                name = Str; Cell25 ; 
+                isolating = Str; 2 ; 
+                overpopulation = Str; 3 ; 
+                toBorn = Str; 3 ; 
+                }
+            }
+        Line
+            {
+            Source = Cmp ;  1 ;  1 ; 0
+            Sink = Cmp ;  2 ;  1 ; -1
+            PointX = 0 ; 1500
+            PointY = 0 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  1 ;  1 ; 0
+            Sink = Cmp ;  6 ;  1 ; -1
+            PointX = 0 ; 0
+            PointY = 0 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  1 ;  1 ; 0
+            Sink = Cmp ;  7 ;  1 ; -1
+            PointX = 0 ; 1500
+            PointY = 0 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  2 ;  1 ; 0
+            Sink = Cmp ;  1 ;  1 ; -1
+            PointX = 1500 ; 0
+            PointY = 0 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  2 ;  1 ; 0
+            Sink = Cmp ;  3 ;  1 ; -1
+            PointX = 1500 ; 3000
+            PointY = 0 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  2 ;  1 ; 0
+            Sink = Cmp ;  6 ;  1 ; -1
+            PointX = 1500 ; 0
+            PointY = 0 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  2 ;  1 ; 0
+            Sink = Cmp ;  7 ;  1 ; -1
+            PointX = 1500 ; 1500
+            PointY = 0 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  2 ;  1 ; 0
+            Sink = Cmp ;  8 ;  1 ; -1
+            PointX = 1500 ; 3000
+            PointY = 0 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  3 ;  1 ; 0
+            Sink = Cmp ;  2 ;  1 ; -1
+            PointX = 3000 ; 1500
+            PointY = 0 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  3 ;  1 ; 0
+            Sink = Cmp ;  4 ;  1 ; -1
+            PointX = 3000 ; 4500
+            PointY = 0 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  3 ;  1 ; 0
+            Sink = Cmp ;  7 ;  1 ; -1
+            PointX = 3000 ; 1500
+            PointY = 0 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  3 ;  1 ; 0
+            Sink = Cmp ;  8 ;  1 ; -1
+            PointX = 3000 ; 3000
+            PointY = 0 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  3 ;  1 ; 0
+            Sink = Cmp ;  9 ;  1 ; -1
+            PointX = 3000 ; 4500
+            PointY = 0 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  4 ;  1 ; 0
+            Sink = Cmp ;  3 ;  1 ; -1
+            PointX = 4500 ; 3000
+            PointY = 0 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  4 ;  1 ; 0
+            Sink = Cmp ;  5 ;  1 ; -1
+            PointX = 4500 ; 6000
+            PointY = 0 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  4 ;  1 ; 0
+            Sink = Cmp ;  8 ;  1 ; -1
+            PointX = 4500 ; 3000
+            PointY = 0 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  4 ;  1 ; 0
+            Sink = Cmp ;  9 ;  1 ; -1
+            PointX = 4500 ; 4500
+            PointY = 0 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  4 ;  1 ; 0
+            Sink = Cmp ;  10 ;  1 ; -1
+            PointX = 4500 ; 6000
+            PointY = 0 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  5 ;  1 ; 0
+            Sink = Cmp ;  4 ;  1 ; -1
+            PointX = 6000 ; 4500
+            PointY = 0 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  5 ;  1 ; 0
+            Sink = Cmp ;  9 ;  1 ; -1
+            PointX = 6000 ; 4500
+            PointY = 0 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  5 ;  1 ; 0
+            Sink = Cmp ;  10 ;  1 ; -1
+            PointX = 6000 ; 6000
+            PointY = 0 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  6 ;  1 ; 0
+            Sink = Cmp ;  1 ;  1 ; -1
+            PointX = 0 ; 0
+            PointY = -1500 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  6 ;  1 ; 0
+            Sink = Cmp ;  2 ;  1 ; -1
+            PointX = 0 ; 1500
+            PointY = -1500 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  6 ;  1 ; 0
+            Sink = Cmp ;  7 ;  1 ; -1
+            PointX = 0 ; 1500
+            PointY = -1500 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  6 ;  1 ; 0
+            Sink = Cmp ;  11 ;  1 ; -1
+            PointX = 0 ; 0
+            PointY = -1500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  6 ;  1 ; 0
+            Sink = Cmp ;  12 ;  1 ; -1
+            PointX = 0 ; 1500
+            PointY = -1500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  7 ;  1 ; 0
+            Sink = Cmp ;  1 ;  1 ; -1
+            PointX = 1500 ; 0
+            PointY = -1500 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  7 ;  1 ; 0
+            Sink = Cmp ;  2 ;  1 ; -1
+            PointX = 1500 ; 1500
+            PointY = -1500 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  7 ;  1 ; 0
+            Sink = Cmp ;  3 ;  1 ; -1
+            PointX = 1500 ; 3000
+            PointY = -1500 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  7 ;  1 ; 0
+            Sink = Cmp ;  6 ;  1 ; -1
+            PointX = 1500 ; 0
+            PointY = -1500 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  7 ;  1 ; 0
+            Sink = Cmp ;  8 ;  1 ; -1
+            PointX = 1500 ; 3000
+            PointY = -1500 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  7 ;  1 ; 0
+            Sink = Cmp ;  11 ;  1 ; -1
+            PointX = 1500 ; 0
+            PointY = -1500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  7 ;  1 ; 0
+            Sink = Cmp ;  12 ;  1 ; -1
+            PointX = 1500 ; 1500
+            PointY = -1500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  7 ;  1 ; 0
+            Sink = Cmp ;  13 ;  1 ; -1
+            PointX = 1500 ; 3000
+            PointY = -1500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  8 ;  1 ; 0
+            Sink = Cmp ;  2 ;  1 ; -1
+            PointX = 3000 ; 1500
+            PointY = -1500 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  8 ;  1 ; 0
+            Sink = Cmp ;  3 ;  1 ; -1
+            PointX = 3000 ; 3000
+            PointY = -1500 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  8 ;  1 ; 0
+            Sink = Cmp ;  4 ;  1 ; -1
+            PointX = 3000 ; 4500
+            PointY = -1500 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  8 ;  1 ; 0
+            Sink = Cmp ;  7 ;  1 ; -1
+            PointX = 3000 ; 1500
+            PointY = -1500 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  8 ;  1 ; 0
+            Sink = Cmp ;  9 ;  1 ; -1
+            PointX = 3000 ; 4500
+            PointY = -1500 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  8 ;  1 ; 0
+            Sink = Cmp ;  12 ;  1 ; -1
+            PointX = 3000 ; 1500
+            PointY = -1500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  8 ;  1 ; 0
+            Sink = Cmp ;  13 ;  1 ; -1
+            PointX = 3000 ; 3000
+            PointY = -1500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  8 ;  1 ; 0
+            Sink = Cmp ;  14 ;  1 ; -1
+            PointX = 3000 ; 4500
+            PointY = -1500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  9 ;  1 ; 0
+            Sink = Cmp ;  3 ;  1 ; -1
+            PointX = 4500 ; 3000
+            PointY = -1500 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  9 ;  1 ; 0
+            Sink = Cmp ;  4 ;  1 ; -1
+            PointX = 4500 ; 4500
+            PointY = -1500 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  9 ;  1 ; 0
+            Sink = Cmp ;  5 ;  1 ; -1
+            PointX = 4500 ; 6000
+            PointY = -1500 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  9 ;  1 ; 0
+            Sink = Cmp ;  8 ;  1 ; -1
+            PointX = 4500 ; 3000
+            PointY = -1500 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  9 ;  1 ; 0
+            Sink = Cmp ;  10 ;  1 ; -1
+            PointX = 4500 ; 6000
+            PointY = -1500 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  9 ;  1 ; 0
+            Sink = Cmp ;  13 ;  1 ; -1
+            PointX = 4500 ; 3000
+            PointY = -1500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  9 ;  1 ; 0
+            Sink = Cmp ;  14 ;  1 ; -1
+            PointX = 4500 ; 4500
+            PointY = -1500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  9 ;  1 ; 0
+            Sink = Cmp ;  15 ;  1 ; -1
+            PointX = 4500 ; 6000
+            PointY = -1500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  10 ;  1 ; 0
+            Sink = Cmp ;  4 ;  1 ; -1
+            PointX = 6000 ; 4500
+            PointY = -1500 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  10 ;  1 ; 0
+            Sink = Cmp ;  5 ;  1 ; -1
+            PointX = 6000 ; 6000
+            PointY = -1500 ; 0
+            }
+        Line
+            {
+            Source = Cmp ;  10 ;  1 ; 0
+            Sink = Cmp ;  9 ;  1 ; -1
+            PointX = 6000 ; 4500
+            PointY = -1500 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  10 ;  1 ; 0
+            Sink = Cmp ;  14 ;  1 ; -1
+            PointX = 6000 ; 4500
+            PointY = -1500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  10 ;  1 ; 0
+            Sink = Cmp ;  15 ;  1 ; -1
+            PointX = 6000 ; 6000
+            PointY = -1500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  11 ;  1 ; 0
+            Sink = Cmp ;  6 ;  1 ; -1
+            PointX = 0 ; 0
+            PointY = -3000 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  11 ;  1 ; 0
+            Sink = Cmp ;  7 ;  1 ; -1
+            PointX = 0 ; 1500
+            PointY = -3000 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  11 ;  1 ; 0
+            Sink = Cmp ;  12 ;  1 ; -1
+            PointX = 0 ; 1500
+            PointY = -3000 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  11 ;  1 ; 0
+            Sink = Cmp ;  16 ;  1 ; -1
+            PointX = 0 ; 0
+            PointY = -3000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  11 ;  1 ; 0
+            Sink = Cmp ;  17 ;  1 ; -1
+            PointX = 0 ; 1500
+            PointY = -3000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  12 ;  1 ; 0
+            Sink = Cmp ;  6 ;  1 ; -1
+            PointX = 1500 ; 0
+            PointY = -3000 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  12 ;  1 ; 0
+            Sink = Cmp ;  7 ;  1 ; -1
+            PointX = 1500 ; 1500
+            PointY = -3000 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  12 ;  1 ; 0
+            Sink = Cmp ;  8 ;  1 ; -1
+            PointX = 1500 ; 3000
+            PointY = -3000 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  12 ;  1 ; 0
+            Sink = Cmp ;  11 ;  1 ; -1
+            PointX = 1500 ; 0
+            PointY = -3000 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  12 ;  1 ; 0
+            Sink = Cmp ;  13 ;  1 ; -1
+            PointX = 1500 ; 3000
+            PointY = -3000 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  12 ;  1 ; 0
+            Sink = Cmp ;  16 ;  1 ; -1
+            PointX = 1500 ; 0
+            PointY = -3000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  12 ;  1 ; 0
+            Sink = Cmp ;  17 ;  1 ; -1
+            PointX = 1500 ; 1500
+            PointY = -3000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  12 ;  1 ; 0
+            Sink = Cmp ;  18 ;  1 ; -1
+            PointX = 1500 ; 3000
+            PointY = -3000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  13 ;  1 ; 0
+            Sink = Cmp ;  7 ;  1 ; -1
+            PointX = 3000 ; 1500
+            PointY = -3000 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  13 ;  1 ; 0
+            Sink = Cmp ;  8 ;  1 ; -1
+            PointX = 3000 ; 3000
+            PointY = -3000 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  13 ;  1 ; 0
+            Sink = Cmp ;  9 ;  1 ; -1
+            PointX = 3000 ; 4500
+            PointY = -3000 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  13 ;  1 ; 0
+            Sink = Cmp ;  12 ;  1 ; -1
+            PointX = 3000 ; 1500
+            PointY = -3000 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  13 ;  1 ; 0
+            Sink = Cmp ;  14 ;  1 ; -1
+            PointX = 3000 ; 4500
+            PointY = -3000 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  13 ;  1 ; 0
+            Sink = Cmp ;  17 ;  1 ; -1
+            PointX = 3000 ; 1500
+            PointY = -3000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  13 ;  1 ; 0
+            Sink = Cmp ;  18 ;  1 ; -1
+            PointX = 3000 ; 3000
+            PointY = -3000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  13 ;  1 ; 0
+            Sink = Cmp ;  19 ;  1 ; -1
+            PointX = 3000 ; 4500
+            PointY = -3000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  14 ;  1 ; 0
+            Sink = Cmp ;  8 ;  1 ; -1
+            PointX = 4500 ; 3000
+            PointY = -3000 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  14 ;  1 ; 0
+            Sink = Cmp ;  9 ;  1 ; -1
+            PointX = 4500 ; 4500
+            PointY = -3000 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  14 ;  1 ; 0
+            Sink = Cmp ;  10 ;  1 ; -1
+            PointX = 4500 ; 6000
+            PointY = -3000 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  14 ;  1 ; 0
+            Sink = Cmp ;  13 ;  1 ; -1
+            PointX = 4500 ; 3000
+            PointY = -3000 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  14 ;  1 ; 0
+            Sink = Cmp ;  15 ;  1 ; -1
+            PointX = 4500 ; 6000
+            PointY = -3000 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  14 ;  1 ; 0
+            Sink = Cmp ;  18 ;  1 ; -1
+            PointX = 4500 ; 3000
+            PointY = -3000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  14 ;  1 ; 0
+            Sink = Cmp ;  19 ;  1 ; -1
+            PointX = 4500 ; 4500
+            PointY = -3000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  14 ;  1 ; 0
+            Sink = Cmp ;  20 ;  1 ; -1
+            PointX = 4500 ; 6000
+            PointY = -3000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  15 ;  1 ; 0
+            Sink = Cmp ;  9 ;  1 ; -1
+            PointX = 6000 ; 4500
+            PointY = -3000 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  15 ;  1 ; 0
+            Sink = Cmp ;  10 ;  1 ; -1
+            PointX = 6000 ; 6000
+            PointY = -3000 ; -1500
+            }
+        Line
+            {
+            Source = Cmp ;  15 ;  1 ; 0
+            Sink = Cmp ;  14 ;  1 ; -1
+            PointX = 6000 ; 4500
+            PointY = -3000 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  15 ;  1 ; 0
+            Sink = Cmp ;  19 ;  1 ; -1
+            PointX = 6000 ; 4500
+            PointY = -3000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  15 ;  1 ; 0
+            Sink = Cmp ;  20 ;  1 ; -1
+            PointX = 6000 ; 6000
+            PointY = -3000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  16 ;  1 ; 0
+            Sink = Cmp ;  11 ;  1 ; -1
+            PointX = 0 ; 0
+            PointY = -4500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  16 ;  1 ; 0
+            Sink = Cmp ;  12 ;  1 ; -1
+            PointX = 0 ; 1500
+            PointY = -4500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  16 ;  1 ; 0
+            Sink = Cmp ;  17 ;  1 ; -1
+            PointX = 0 ; 1500
+            PointY = -4500 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  16 ;  1 ; 0
+            Sink = Cmp ;  21 ;  1 ; -1
+            PointX = 0 ; 0
+            PointY = -4500 ; -6000
+            }
+        Line
+            {
+            Source = Cmp ;  16 ;  1 ; 0
+            Sink = Cmp ;  22 ;  1 ; -1
+            PointX = 0 ; 1500
+            PointY = -4500 ; -6000
+            }
+        Line
+            {
+            Source = Cmp ;  17 ;  1 ; 0
+            Sink = Cmp ;  11 ;  1 ; -1
+            PointX = 1500 ; 0
+            PointY = -4500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  17 ;  1 ; 0
+            Sink = Cmp ;  12 ;  1 ; -1
+            PointX = 1500 ; 1500
+            PointY = -4500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  17 ;  1 ; 0
+            Sink = Cmp ;  13 ;  1 ; -1
+            PointX = 1500 ; 3000
+            PointY = -4500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  17 ;  1 ; 0
+            Sink = Cmp ;  16 ;  1 ; -1
+            PointX = 1500 ; 0
+            PointY = -4500 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  17 ;  1 ; 0
+            Sink = Cmp ;  18 ;  1 ; -1
+            PointX = 1500 ; 3000
+            PointY = -4500 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  17 ;  1 ; 0
+            Sink = Cmp ;  21 ;  1 ; -1
+            PointX = 1500 ; 0
+            PointY = -4500 ; -6000
+            }
+        Line
+            {
+            Source = Cmp ;  17 ;  1 ; 0
+            Sink = Cmp ;  22 ;  1 ; -1
+            PointX = 1500 ; 1500
+            PointY = -4500 ; -6000
+            }
+        Line
+            {
+            Source = Cmp ;  17 ;  1 ; 0
+            Sink = Cmp ;  23 ;  1 ; -1
+            PointX = 1500 ; 3000
+            PointY = -4500 ; -6000
+            }
+        Line
+            {
+            Source = Cmp ;  18 ;  1 ; 0
+            Sink = Cmp ;  12 ;  1 ; -1
+            PointX = 3000 ; 1500
+            PointY = -4500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  18 ;  1 ; 0
+            Sink = Cmp ;  13 ;  1 ; -1
+            PointX = 3000 ; 3000
+            PointY = -4500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  18 ;  1 ; 0
+            Sink = Cmp ;  14 ;  1 ; -1
+            PointX = 3000 ; 4500
+            PointY = -4500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  18 ;  1 ; 0
+            Sink = Cmp ;  17 ;  1 ; -1
+            PointX = 3000 ; 1500
+            PointY = -4500 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  18 ;  1 ; 0
+            Sink = Cmp ;  19 ;  1 ; -1
+            PointX = 3000 ; 4500
+            PointY = -4500 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  18 ;  1 ; 0
+            Sink = Cmp ;  22 ;  1 ; -1
+            PointX = 3000 ; 1500
+            PointY = -4500 ; -6000
+            }
+        Line
+            {
+            Source = Cmp ;  18 ;  1 ; 0
+            Sink = Cmp ;  23 ;  1 ; -1
+            PointX = 3000 ; 3000
+            PointY = -4500 ; -6000
+            }
+        Line
+            {
+            Source = Cmp ;  18 ;  1 ; 0
+            Sink = Cmp ;  24 ;  1 ; -1
+            PointX = 3000 ; 4500
+            PointY = -4500 ; -6000
+            }
+        Line
+            {
+            Source = Cmp ;  19 ;  1 ; 0
+            Sink = Cmp ;  13 ;  1 ; -1
+            PointX = 4500 ; 3000
+            PointY = -4500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  19 ;  1 ; 0
+            Sink = Cmp ;  14 ;  1 ; -1
+            PointX = 4500 ; 4500
+            PointY = -4500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  19 ;  1 ; 0
+            Sink = Cmp ;  15 ;  1 ; -1
+            PointX = 4500 ; 6000
+            PointY = -4500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  19 ;  1 ; 0
+            Sink = Cmp ;  18 ;  1 ; -1
+            PointX = 4500 ; 3000
+            PointY = -4500 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  19 ;  1 ; 0
+            Sink = Cmp ;  20 ;  1 ; -1
+            PointX = 4500 ; 6000
+            PointY = -4500 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  19 ;  1 ; 0
+            Sink = Cmp ;  23 ;  1 ; -1
+            PointX = 4500 ; 3000
+            PointY = -4500 ; -6000
+            }
+        Line
+            {
+            Source = Cmp ;  19 ;  1 ; 0
+            Sink = Cmp ;  24 ;  1 ; -1
+            PointX = 4500 ; 4500
+            PointY = -4500 ; -6000
+            }
+        Line
+            {
+            Source = Cmp ;  19 ;  1 ; 0
+            Sink = Cmp ;  25 ;  1 ; -1
+            PointX = 4500 ; 6000
+            PointY = -4500 ; -6000
+            }
+        Line
+            {
+            Source = Cmp ;  20 ;  1 ; 0
+            Sink = Cmp ;  14 ;  1 ; -1
+            PointX = 6000 ; 4500
+            PointY = -4500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  20 ;  1 ; 0
+            Sink = Cmp ;  15 ;  1 ; -1
+            PointX = 6000 ; 6000
+            PointY = -4500 ; -3000
+            }
+        Line
+            {
+            Source = Cmp ;  20 ;  1 ; 0
+            Sink = Cmp ;  19 ;  1 ; -1
+            PointX = 6000 ; 4500
+            PointY = -4500 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  20 ;  1 ; 0
+            Sink = Cmp ;  24 ;  1 ; -1
+            PointX = 6000 ; 4500
+            PointY = -4500 ; -6000
+            }
+        Line
+            {
+            Source = Cmp ;  20 ;  1 ; 0
+            Sink = Cmp ;  25 ;  1 ; -1
+            PointX = 6000 ; 6000
+            PointY = -4500 ; -6000
+            }
+        Line
+            {
+            Source = Cmp ;  21 ;  1 ; 0
+            Sink = Cmp ;  16 ;  1 ; -1
+            PointX = 0 ; 0
+            PointY = -6000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  21 ;  1 ; 0
+            Sink = Cmp ;  17 ;  1 ; -1
+            PointX = 0 ; 1500
+            PointY = -6000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  21 ;  1 ; 0
+            Sink = Cmp ;  22 ;  1 ; -1
+            PointX = 0 ; 1500
+            PointY = -6000 ; -6000
+            }
+        Line
+            {
+            Source = Cmp ;  22 ;  1 ; 0
+            Sink = Cmp ;  16 ;  1 ; -1
+            PointX = 1500 ; 0
+            PointY = -6000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  22 ;  1 ; 0
+            Sink = Cmp ;  17 ;  1 ; -1
+            PointX = 1500 ; 1500
+            PointY = -6000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  22 ;  1 ; 0
+            Sink = Cmp ;  18 ;  1 ; -1
+            PointX = 1500 ; 3000
+            PointY = -6000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  22 ;  1 ; 0
+            Sink = Cmp ;  21 ;  1 ; -1
+            PointX = 1500 ; 0
+            PointY = -6000 ; -6000
+            }
+        Line
+            {
+            Source = Cmp ;  22 ;  1 ; 0
+            Sink = Cmp ;  23 ;  1 ; -1
+            PointX = 1500 ; 3000
+            PointY = -6000 ; -6000
+            }
+        Line
+            {
+            Source = Cmp ;  23 ;  1 ; 0
+            Sink = Cmp ;  17 ;  1 ; -1
+            PointX = 3000 ; 1500
+            PointY = -6000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  23 ;  1 ; 0
+            Sink = Cmp ;  18 ;  1 ; -1
+            PointX = 3000 ; 3000
+            PointY = -6000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  23 ;  1 ; 0
+            Sink = Cmp ;  19 ;  1 ; -1
+            PointX = 3000 ; 4500
+            PointY = -6000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  23 ;  1 ; 0
+            Sink = Cmp ;  22 ;  1 ; -1
+            PointX = 3000 ; 1500
+            PointY = -6000 ; -6000
+            }
+        Line
+            {
+            Source = Cmp ;  23 ;  1 ; 0
+            Sink = Cmp ;  24 ;  1 ; -1
+            PointX = 3000 ; 4500
+            PointY = -6000 ; -6000
+            }
+        Line
+            {
+            Source = Cmp ;  24 ;  1 ; 0
+            Sink = Cmp ;  18 ;  1 ; -1
+            PointX = 4500 ; 3000
+            PointY = -6000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  24 ;  1 ; 0
+            Sink = Cmp ;  19 ;  1 ; -1
+            PointX = 4500 ; 4500
+            PointY = -6000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  24 ;  1 ; 0
+            Sink = Cmp ;  20 ;  1 ; -1
+            PointX = 4500 ; 6000
+            PointY = -6000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  24 ;  1 ; 0
+            Sink = Cmp ;  23 ;  1 ; -1
+            PointX = 4500 ; 3000
+            PointY = -6000 ; -6000
+            }
+        Line
+            {
+            Source = Cmp ;  24 ;  1 ; 0
+            Sink = Cmp ;  25 ;  1 ; -1
+            PointX = 4500 ; 6000
+            PointY = -6000 ; -6000
+            }
+        Line
+            {
+            Source = Cmp ;  25 ;  1 ; 0
+            Sink = Cmp ;  19 ;  1 ; -1
+            PointX = 6000 ; 4500
+            PointY = -6000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  25 ;  1 ; 0
+            Sink = Cmp ;  20 ;  1 ; -1
+            PointX = 6000 ; 6000
+            PointY = -6000 ; -4500
+            }
+        Line
+            {
+            Source = Cmp ;  25 ;  1 ; 0
+            Sink = Cmp ;  24 ;  1 ; -1
+            PointX = 6000 ; 4500
+            PointY = -6000 ; -6000
+            }
+        }
+    }
