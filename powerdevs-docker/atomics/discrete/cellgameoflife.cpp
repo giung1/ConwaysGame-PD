@@ -25,10 +25,6 @@ void cellgameoflife::init(double t, ...) {
     char* str_born = va_arg(parameters, char*);
     toBorn = atoi(str_born);
 
-    // 5. Neighbors (Aunque no lo usaremos para el loop, hay que leerlo para limpiar la pila)
-    char* str_neig = va_arg(parameters, char*);
-    numNeighbors = atoi(str_neig);
-
     va_end(parameters);
 
     // Limpiamos la memoria de vecinos
@@ -36,11 +32,11 @@ void cellgameoflife::init(double t, ...) {
         neighbors[i] = 0;
     }
 
-    // Enviar estado inicial a los vecinos antes del primer Tick.
+    // enviar estado inicial a los vecinos antes del primer Tick.
     sigma = 0.0;
 
-    printLog("Cell %s initialized: alive=%d, isolating=%d, overpopulation=%d, toBorn=%d, numNeighbors=%d\n", 
-             name, alive, isolating, overpopulation, toBorn, numNeighbors);
+    printLog("Cell %s initialized: alive=%d, isolating=%d, overpopulation=%d, toBorn=%d\n", 
+             name, alive, isolating, overpopulation, toBorn);
 }
 
 double cellgameoflife::ta(double t) {
@@ -52,7 +48,7 @@ void cellgameoflife::dint(double t) {
         printLog("Cell %s internal transition: alive=%d -> next_alive=%d\n", name, alive, next_alive);
     }
     alive = next_alive;
-    // Dormir hasta el proximo evento
+    // dormir hasta el proximo evento
     sigma = 1.0e20;
 }
 
@@ -64,7 +60,7 @@ void cellgameoflife::dext(Event x, double t) {
 
     if (x.port == 0) { // Clock
         int k = 0;
-        // Revisar SIEMPRE los 8 puertos posibles
+        // revisar  los 8 puertos posibles
         for (int i = 0; i < 8; ++i) {
             if (neighbors[i] != 0) ++k;
         }
@@ -77,11 +73,11 @@ void cellgameoflife::dext(Event x, double t) {
             else next_alive = 0;
         }
 
-        // Avisar cambio inmediatamente
+        // Aaisar cambio inmediatamente
         sigma = 0.0;
 
     } else if (x.port >= 1 && x.port <= 8) {
-        // Actualizar vecino
+        // actualizar vecino
         int idx = x.port - 1;
         if (idx >= 0 && idx < 8) {
             neighbors[idx] = (u[0] != 0.0) ? 1 : 0;
@@ -91,7 +87,7 @@ void cellgameoflife::dext(Event x, double t) {
 
 Event cellgameoflife::lambda(double t) {
     if (t == 0.0) {
-        y[0] = (double)alive; // esto lo hago para loggear el estado inicial
+        y[0] = (double)alive; // esto lo hago para guardar el estado inicial en el archivo de salida, no influye en la simulación
     } else {
         y[0] = (double)next_alive;
     }

@@ -13,7 +13,6 @@ double sigma;          // tiempo hasta el próximo evento interno
 int isolating;         // regla: soledad (normalmente 2)
 int overpopulation;    // regla: sobrepoblación (normalmente 3)
 int toBorn;            // regla: nacimiento (normalmente 3)
-int numNeighbors;      // cantidad real de vecinos (3,5,8)
 
 int alive;             // estado actual (0 o 1)
 int next_alive;        // estado siguiente (0 o 1)
