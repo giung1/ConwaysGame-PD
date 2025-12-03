@@ -1,11 +1,10 @@
 #include "tickgenerator.h"
-#include <stdlib.h> // Para atof
+#include <stdlib.h> 
 
 void tickgenerator::init(double t, ...) {
     va_list parameters;
     va_start(parameters, t);
 
-    // Recibimos el periodo como String y lo convertimos a double
     char* str_period = va_arg(parameters, char*);
     period = atof(str_period);
 

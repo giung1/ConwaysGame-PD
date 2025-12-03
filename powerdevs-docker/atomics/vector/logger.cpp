@@ -28,12 +28,10 @@ void logger::init(double t, ...) {
         }
         fprintf(archivo, "\n");
         
-        // --- CAMBIO 1: Inicialización de control de archivo ---
-        // Guardamos dónde termina el encabezado para empezar a escribir datos ahí
+
         pos_linea_actual = ftell(archivo); 
     }
     
-    // Inicializamos con un tiempo imposible para asegurar que el primer t=0 se escriba bien
     tiempo_anterior = -1.0; 
 
     sigma = 1e20;
@@ -52,24 +50,20 @@ void logger::dext(Event x, double t) {
     double *v = (double*)x.value;
     
     if (puerto >= 0 && puerto < num_celdas) {
-        // Actualizamos el estado interno
         valores[puerto] = (v[0] != 0.0) ? 1.0 : 0.0;
         
         if (archivo != NULL) {
-            // --- CAMBIO 2: Lógica de Sobrescritura ---
             
             if (t == tiempo_anterior) {
-                // Si es el MISMO tiempo, rebobinamos el archivo al inicio de esta línea
-                // para sobrescribirla con los datos actualizados.
+
                 fseek(archivo, pos_linea_actual, SEEK_SET);
             } else {
-                // Si es un tiempo NUEVO, guardamos la posición actual antes de escribir.
-                // Esta será la posición de retorno si llega otro evento en este mismo t.
+
                 pos_linea_actual = ftell(archivo);
                 tiempo_anterior = t;
             }
 
-            // Escribimos la línea (ya sea nueva o sobrescribiendo la vieja)
+
             fprintf(archivo, "%f", t);
             
             for(int i=0; i < num_celdas; i++) {
@@ -77,7 +71,6 @@ void logger::dext(Event x, double t) {
             }
             fprintf(archivo, "\n");
             
-            // Forzamos la escritura al disco por si el programa se cierra abruptamente
             fflush(archivo); 
         }
     }
