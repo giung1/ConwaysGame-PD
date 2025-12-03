@@ -5,9 +5,6 @@ void cellgameoflife::init(double t, ...) {
     va_list parameters;
     va_start(parameters, t);
 
-    // IMPORTANTE: El orden aqui debe coincidir EXACTAMENTE con tu PDM.
-    // Asumiendo el orden: alive, isolating, overpopulation, toBorn, neighbors
-    // Si tu PDM tiene un parametro "name" primero, debes agregar un va_arg extra al principio para ignorarlo.
 
     char* name = va_arg(parameters, char*); // Ignorado si ya tienes el nombre en 'name'
     // 1. Alive
@@ -39,7 +36,7 @@ void cellgameoflife::init(double t, ...) {
         neighbors[i] = 0;
     }
 
-    // Esto hace que la celula envie su estado inicial a los vecinos antes del primer Tick.
+    // Enviar estado inicial a los vecinos antes del primer Tick.
     sigma = 0.0;
 
     printLog("Cell %s initialized: alive=%d, isolating=%d, overpopulation=%d, toBorn=%d, numNeighbors=%d\n", 
