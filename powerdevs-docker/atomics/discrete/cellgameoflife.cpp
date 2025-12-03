@@ -90,7 +90,11 @@ void cellgameoflife::dext(Event x, double t) {
 }
 
 Event cellgameoflife::lambda(double t) {
-    y[0] = (double)next_alive;
+    if (t == 0.0) {
+        y[0] = (double)alive; // esto lo hago para loggear el estado inicial
+    } else {
+        y[0] = (double)next_alive;
+    }
     return Event(&y, 0);
 }
 
