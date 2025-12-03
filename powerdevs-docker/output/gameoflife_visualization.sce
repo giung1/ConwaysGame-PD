@@ -38,10 +38,6 @@ dt_animacion = 0.2;
 f = scf(0); clf();
 
 
-// Fila 1: Color para Células MUERTAS (0) -> Azul grisáceo (para que se distingan del fondo)
-// Fila 2: Color para Células VIVAS (1)   -> Cian Brillante (o Amarillo si prefieres)
-// Fila 3: Color del FONDO de la ventana  -> Azul Noche profundo
-// Fila 4: Color de la REJILLA (Grid)     -> Gris claro
 f.color_map = [0.20 0.25 0.40 ; ...  // Index 1: Muertas
                0.00 1.00 1.00 ; ...  // Index 2: Vivas
                0.05 0.05 0.20 ; ...  // Index 3: Fondo Ventana
@@ -50,7 +46,9 @@ f.color_map = [0.20 0.25 0.40 ; ...  // Index 1: Muertas
 f.background = 3; 
 
 for t = tiempos_a_dibujar
-    
+    if find(winsid() == 0) == [] then
+        break;
+    end
     indices = find(tiempo_registrado <= t + 0.0001);
     if isempty(indices) then
         vector_actual = zeros(1, total_celulas);
