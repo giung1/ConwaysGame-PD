@@ -16,5 +16,5 @@ if [ $? -ne 0 ]; then
     fi
 fi
 
-python3 script_pdm_gen_tick_logger.py
+python3 script_pdm_gen.py
 
