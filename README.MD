@@ -35,7 +35,17 @@ cd assets
 bash gen_pdm.sh
 ```
 
-Luego 
+### 3. Ejecutar la simulacion y ver el resultado graficamente
+
 - En Power-Devs cargar el pdm generado en `examples/gameoflife/` con nombre `gameoflife_generated.pdm` 
 - Ejecutar la simulación 
 - Realizar la visualizacion de la simulación en Scilab usando el archivo `gameoflife_visualization.sce`
+
+
+
+
+NOTA: si el script de inicializacion en python no funciona o la terminal da un error, es porque no se pudo instalar la libreria tkinter para la parte grafica, intalarla manualmente usando:
+```bash
+sudo apt-get update
+sudo apt-get install -y python3-tk
+```
